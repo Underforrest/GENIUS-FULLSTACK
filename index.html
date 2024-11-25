@@ -12,48 +12,62 @@
     <!--Відображання на мобільних пристроях-->
     <title>Сучасна пекарня</title>
     <!--Заголовок для документу-->
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="">
-          <!-- logo -->
+        <a href="./index.html">
+          <!-- href="/" -->
+          <img src="./images/logo.svg" alt="Логопит сучасної пекарні" />
         </a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li>
+            <a class="menu-link" href="#tradition-section">Наші традиції</a>
+          </li>
+          <li><a class="menu-link" href="#chef-section">Шеф-кухарі</a></li>
+          <li><a class="menu-link" href="#formats-section">Формати</a></li>
+          <li><a class="menu-link" href="#contact-section">Контакти</a></li>
           <!-- # заглушка -->
           <!-- target="blank_" відкрити нову сторінку -->
         </ul>
       </nav>
-      <!--make a call-->
+      <button type="button" class="button">Замовити дзвінок</button>
+      <!-- якщо type="submit" відправляє дані в БД -->
     </header>
     <main>
       <section>
-        <h1>Cучасна пекарня</h1>
+        <h1 class="main-title" id="main-title">
+          <span class="accent">Cучасна</span> пекарня
+        </h1>
         <!-- Має бути тільки один заголок h1 -->
       </section>
-      <section>
-        <ul>
+      <section id="tradition-section">
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
         <h2>Новий формат традицій</h2>
         <p>
-          <span>shop bakery</span> - це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інградієнтів.
+          <span class="accent">shop bakery</span> - це пекарня, яка взяла все
+          найкраще, і зберегла смак традиційної випічки та натуральність
+          інградієнтів.
         </p>
         <p>
           Ми працюємо як найвідоміші мережі -
-          <span>5 хвилин і замовлення готове.</span> А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
+          <span class="accent">5 хвилин і замовлення готове.</span> А ще у наших
+          пекарень стильний дизайн та висока якість обслуговування!
         </p>
+        <img
+          src="./images/baker-man.jpg"
+          alt="Чоловік пекар дивиться на батон із посмішкою@"
+        />
       </section>
-      <section>
-        <h2>Наші найкращі шеф-кухарі</h2>
+      <section id="chef-section">
+        <h2 class="section-title">
+          Наші найкращі <span class="accent">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -76,8 +90,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="formats-section">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -96,20 +110,33 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Приєднуйтесь до мережі пекарень</h2>
+      <section id="contact-section">
+        <h2 class="section-title">Приєднуйтесь до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11352.033724794708!2d30.485204898879367!3d50.45807482284897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1732347898367!5m2!1sen!2sua"
+          width="603"
+          height="595"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
       </section>
     </main>
     <footer>
       <nav>
-        <a href="">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Логопит сучасної пекарні" />
           <!-- logo -->
         </a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li>
+            <a class="menu-link" href="#tradition-section">Наші традиції</a>
+          </li>
+          <li><a class="menu-link" href="#chef-section">Шеф-кухарі</a></li>
+          <li><a class="menu-link" href="#formats-section">Формати</a></li>
+          <li><a class="menu-link" href="#contact-section">Контакти</a></li>
           <!-- # заглушка -->
           <!-- target="blank_" відкрити нову сторінку -->
         </ul>
@@ -123,9 +150,19 @@
               Україна, м. Київ, вул. Січових Стрільців 54
             </a>
           </li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li>
+            <a href="#">
+              <!-- Facebook icon -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <!-- Instagram icon -->
+            </a>
+          </li>
         </ul>
+        <a href="#" target="_blank">Політика конфіденційності</a>
+        <p>&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
